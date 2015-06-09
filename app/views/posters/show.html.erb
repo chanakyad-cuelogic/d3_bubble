@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @poster.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @poster.description %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= image_tag @poster.photo.url(:medium) %>
+</p>
+
+<%= link_to 'Edit', edit_poster_path(@poster) %> |
+<%= link_to 'Back', posters_path %>
